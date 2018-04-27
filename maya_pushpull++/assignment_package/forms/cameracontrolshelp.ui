@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraControlsHelp</class>
+ <widget class="QWidget" name="CameraControlsHelp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>184</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Camera Controls</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>W: Move forward</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>S: Move backward</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A: Move left</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>D: Move right</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Down arrow: Rotate up</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Up arrow: Rotate down</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>70</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Right arrow: Rotate right</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>50</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Left arrow: Rotate left</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Q: Move down</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>E: Move up</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1: Increase FOV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2: Decrease FOV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>113</x>
+     <y>10</y>
+     <width>31</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>100</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>R: Reset camera to default position and orientation</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alt + LMB: Pan camera</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alt + RMB: Rotate camera around target</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>50</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alt + MMB: Zoom camera</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>393</x>
+     <y>10</y>
+     <width>20</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>80</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LMB: Select vertex</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>100</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RMB: Select half-edge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>120</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MMB: Select face</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>10</y>
+     <width>241</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N: Next half edge of currently selected half-edge</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>10</y>
+     <width>31</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>30</y>
+     <width>281</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>M: Symetric half-edge of the currently selected half-edge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>50</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>F: Face of the currently selected half-edge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>70</y>
+     <width>221</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>V: Vertex of the currently selected half-edge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>90</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>H: Half-edge of the currently selected vertex</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_25">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>110</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Shift + H: Half-edge of the currently selected face</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

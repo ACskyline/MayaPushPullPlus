@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gui2</class>
+ <widget class="QWidget" name="gui2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>403</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Editor2</string>
+  </property>
+  <widget class="QTreeWidget" name="skeletonTreeWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <attribute name="headerVisible">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string notr="true">1</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="rotXButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>x-axis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rotYButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>y-axis</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rotZButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>z-axis</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Magneto</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Rotation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>210</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Magneto</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Translation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>World Position:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Local Position:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>170</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>World Rotation:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>190</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Local Rotation:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wPositionLabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>170</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gill Sans MT Condensed</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>N/A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="wRotationLabel">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>170</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gill Sans MT Condensed</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>N/A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lPositionLabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>190</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gill Sans MT Condensed</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>N/A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lRotationLabel">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>190</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gill Sans MT Condensed</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>N/A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>210</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Magneto</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Skinning</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="skinningButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>skin</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="xDoubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>240</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.500000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="yDoubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>270</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.500000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="zDoubleSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-100000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.500000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>240</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Local X:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>270</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Local Y:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>300</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Local Z:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
