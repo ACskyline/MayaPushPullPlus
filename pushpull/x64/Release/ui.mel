@@ -1,0 +1,174 @@
+global string $win;
+global string $dxField;
+global string $dyField;
+global string $dzField;
+global string $pxField;
+global string $pyField;
+global string $pzField;
+global string $nxField;
+global string $nyField;
+global string $nzField;
+global string $angleField;
+global string $disField;
+	
+global proc executeCommand() {
+    global string $dxField;
+    global string $dyField;
+    global string $dzField;
+    global string $pxField;
+    global string $pyField;
+    global string $pzField;
+    global string $nxField;
+    global string $nyField;
+    global string $nzField;
+    global string $angleField;
+	global string $disField;
+	
+
+	
+    float $angle = `floatField -q -v $angleField`;
+    float $dx = `floatField -q -v $dxField`;
+    float $dy = `floatField -q -v $dyField`;
+    float $dz = `floatField -q -v $dzField`;
+    float $px = `floatField -q -v $pxField`;
+    float $py = `floatField -q -v $pyField`;
+    float $pz = `floatField -q -v $pzField`;
+    float $nx = `floatField -q -v $nxField`;
+    float $ny = `floatField -q -v $nyField`;
+    float $nz = `floatField -q -v $nzField`;
+	float $dis = `floatField -q -v $disField`;
+	float $sel =1;
+	float $thre = 0;
+	float $kmean = 1;
+	float $axis = 1;
+	
+	 if (`radioButtonGrp -q -select myRadBtnGrp` == 1) {$sel = 1; }
+     if (`radioButtonGrp -q -select myRadBtnGrp` == 2) {$sel = 2; }
+     if (`radioButtonGrp -q -select myRadBtnGrp` == 3) {$sel = 3; }
+	 if (`radioButtonGrp -q -select myRadBtnGrp` == 4) {$sel = 4; }
+	 
+	 if (`radioButtonGrp -q -select myRadBtnGrp3` == 1) $kmean = 1; 
+	 if (`radioButtonGrp -q -select myRadBtnGrp3` == 2) $kmean = 2; 
+	 
+	 if (`radioButtonGrp -q -select myRadBtnGrp1` == 1) $thre = 1; 
+	 if (`radioButtonGrp -q -select myRadBtnGrp1` == 2) $thre = 2; 
+	 
+	 if (`radioButtonGrp -q -select myRadBtnGrp2` == 1) $axis = 1; 
+	 if (`radioButtonGrp -q -select myRadBtnGrp2` == 2) $axis = 2; 
+	 if (`radioButtonGrp -q -select myRadBtnGrp2` == 3) $axis = 3; 
+    print("-a " + $angle +
+          " -dx " + $dx + " -dy " + $dy + " -dz " + $dz + 
+          " -px " + $px + " -py " + $py + " -pz " + $pz + 
+          " -nx " + $nx + " -ny " + $ny + " -nz " + $nz +
+		  " -sel " +  $sel + " -dis " + $dis + "thre" + $thre +
+          "\n");
+
+    MayaPushPullPPCmd -a $angle -px $px -py $py -pz $pz -dx $dx -dy $dy -dz $dz -nx $nx -ny $ny -nz $nz -sel $sel -dis $dis -thre $thre -kmean $kmean -axis $axis;
+}
+  
+global proc addUIWidgets() {
+    global string $dxField;
+    global string $dyField;
+    global string $dzField;
+    global string $pxField;
+    global string $pyField;
+    global string $pzField;
+    global string $nxField;
+    global string $nyField;
+    global string $nzField;
+    global string $angleField;
+    global string $disField;
+    
+    columnLayout;
+	
+	frameLayout -label "you can choose to specify the threshold yourself or use recommendation" -w 600;
+	
+    radioButtonGrp 
+     -numberOfRadioButtons 2
+     -label "select mode" 
+     -labelArray2 "use recommendation" "specify threshold" 
+     -select 1
+    myRadBtnGrp1;
+	radioButtonGrp 
+     -numberOfRadioButtons 4
+     -label "select directions" 
+     -labelArray4 "axis" "normal" "adjF" "Kmean" 
+     -select 1
+    myRadBtnGrp;
+	radioButtonGrp 
+     -numberOfRadioButtons 3
+     -label "select axis directions" 
+     -labelArray3 "x" "y" "z"
+     -select 1
+    myRadBtnGrp2;
+	radioButtonGrp 
+     -numberOfRadioButtons 2
+     -label "select k-mean value directions" 
+     -labelArray2 "k-mean 1" "k-mean 2"
+     -select 1
+    myRadBtnGrp3;
+	
+	setParent..;
+	
+	frameLayout -label "specify distance&threshold for pushpull" -w 600;
+    rowLayout -numberOfColumns 6;
+	text -label "               ";
+    text -label "angle";
+    $angleField = `floatField`;
+	text -label "        ";
+	text -label "Distance";
+    $disField = `floatField`;
+    setParent..;
+	setParent..;
+
+    frameLayout -label "doesn't need since have distance" -w 600;
+    rowLayout -numberOfColumns 7;
+	text -label "               ";
+    text -label "dx";
+    $dxField = `floatField -en 0`;
+    text -label "dy";
+    $dyField = `floatField -en 0`;
+    text -label "dz";
+    $dzField = `floatField -en 0`;
+    setParent..;
+    
+    rowLayout -numberOfColumns 7;
+	text -label "               ";
+    text -label "px";
+    $pxField = `floatField -en 0`;
+    text -label "py";
+    $pyField = `floatField -en 0`;
+    text -label "pz";
+    $pzField = `floatField -en 0`;
+    setParent..;
+    
+    rowLayout -numberOfColumns 7;
+	text -label "               ";
+    text -label "nx";
+    $nxField = `floatField -en 0`;
+    text -label "ny";
+    $nyField = `floatField -en 0`;
+    text -label "nz";
+    $nzField = `floatField -en 0`;
+    setParent..;
+    setParent..;
+	
+    rowLayout -numberOfColumns 2;
+    button  -label "MayaPullPush++" -command "executeCommand";
+    setParent..;
+    
+    setParent..;
+}
+  
+global proc UI() {
+    global string $win;
+    int $doesExist = `window -exists $win`;
+    if($doesExist == 0) {
+        $win = `window -title "MayaPushPull++ Menu"`;
+        addUIWidgets();
+    }
+    showWindow $win;
+}
+
+menu -parent MayaWindow -label "MayaPushPull++";
+menuItem -label "MayaPushPull++ Command" -command UI;

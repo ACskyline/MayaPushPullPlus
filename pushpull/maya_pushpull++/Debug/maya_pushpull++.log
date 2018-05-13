@@ -1,0 +1,23 @@
+﻿  PPPPMesh.cpp
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\kmean.cpp(22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\kmean.cpp(94): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\kmean.cpp(124): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(63): warning C4018: '<': signed/unsigned mismatch
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(69): warning C4018: '<': signed/unsigned mismatch
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(116): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(117): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(683): warning C4244: 'argument': conversion from 'unsigned __int64' to 'double', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(692): warning C4244: 'argument': conversion from 'unsigned __int64' to 'double', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(713): warning C4244: 'argument': conversion from 'unsigned __int64' to 'double', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(731): warning C4244: 'argument': conversion from 'unsigned __int64' to 'double', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(779): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(792): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(805): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(1000): warning C4305: '+=': truncation from 'double' to 'float'
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(1109): warning C4018: '<': signed/unsigned mismatch
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(1540): warning C4305: '+=': truncation from 'double' to 'float'
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(1546): warning C4305: '+=': truncation from 'double' to 'float'
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(1809): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+e:\documents\cis-660\authoring tool\bullshit\pushpull\maya_pushpull++\ppppmesh.cpp(1829): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  maya_pushpull++.vcxproj -> E:\Documents\CIS-660\authoring tool\bullshit\pushpull\maya_pushpull++\Debug\maya_pushpull++.mll
+  maya_pushpull++.vcxproj -> Debug\maya_pushpull++.pdb (Partial PDB)
