@@ -1,5 +1,5 @@
 # MayaPushPullPlus
-This project is a Maya plug-in developed in Visual Studio Community 2017. The plug-in is based on the 2014 Siggraph paper PushPull++, written by Markus Lipp, Peter Wonka and Pascal Muller. You can find the plug-in in pushpull\x64\Release\maya_pushpull++.mll. The plug in is tested in Maya 2018 64bit version.
+This project is a Maya plug-in developed in Visual Studio Community 2017. The plug-in is based on the 2014 Siggraph paper [PushPull++, written by Markus Lipp, Peter Wonka and Pascal Muller](http://peterwonka.net/Publications/pdfs/2014.SG.Lipp.PushPull.pdf). You can find the plug-in in pushpull\x64\Release\maya_pushpull++.mll. The plug in was tested on Maya 2018 64bit version.
 
 ## Results
 
@@ -45,7 +45,7 @@ This project is a Maya plug-in developed in Visual Studio Community 2017. The pl
 
 ### Then we tune the parameters and execute the command.
 
-###### We select the user specified threshold mode, set the direction as normal direction of the selected face, set the threshold of the angle as 90 degrees and distance as 2 units. After set the parameters, we press the button labeled as ìMayaPullPush++î to execute the command.
+###### We select the user specified threshold mode, set the direction as normal direction of the selected face, set the threshold of the angle as 90 degrees and distance as 2 units. After set the parameters, we press the button labeled as ‚ÄúMayaPullPush++‚Äù to execute the command.
 
 ![](5.JPG)
 
